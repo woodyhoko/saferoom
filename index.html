@@ -114,7 +114,7 @@
         let isLeaving = false;
 
         // --- Constants & Initialization ---
-        const SIGNALING_SERVER_URL = 'signal.hoko.xyz';
+        const SIGNALING_SERVER_URL = 'https://signal.hoko.xyz';
         const socket = io(SIGNALING_SERVER_URL, { autoConnect: false });
         const configuration = { iceServers: [{ urls: 'stun:stun.l.google.com:19302' }] };
         const DOM = {
