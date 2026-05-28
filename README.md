@@ -86,9 +86,13 @@ Room state is held **in-memory** on the server — no database. This is intentio
 
 ## 5. Run locally
 
+> **Note:** This repository contains the **frontend only**. A Socket.IO signaling server (`server.js`) is required but not included in this repo. You will need to run your own Socket.IO server and point the frontend's `SIGNALING_SERVER_URL` constant to it.
+
+A minimal server can be started with:
+
 ```bash
-npm install
-node server.js
+npm install socket.io express
+node server.js   # your own server implementation
 # open http://localhost:3000
 ```
 
